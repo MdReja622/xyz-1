@@ -1,0 +1,46 @@
+@use '../../utils' as *;
+@use '../../utils' as *;
+.service__card {
+	border: 2px solid black;
+	padding: 40px;
+    transition: .3s;
+    display: flex;
+    &:hover{
+		box-shadow: 5px 5px #0f172a;
+
+    }
+}
+
+.service__icon{
+	& i {
+	height: 70px;
+	width: 70px;
+	background: var(--rj-white);
+	text-align: center;
+	line-height: 70px;
+	color: var(--rj-black);
+	font-size: 35px;
+	margin-right: 30px;
+	border: 2px solid var(--rj-black);
+	}
+}
+
+
+.card__bg1{
+	background-color:#9BD3D0;
+}
+.card__bg2{
+	background-color:#FEC447;
+}
+.card__bg3{
+	background-color: #FECCB5;
+}
+.card__bg4{
+	background-color: #92B5FF;
+}
+.card__bg5{
+	background-color:#C4D39B;
+}
+.card__bg6{
+	background-color:#D2CEFF;
+}

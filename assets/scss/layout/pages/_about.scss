@@ -1,0 +1,6 @@
+@use '../../utils' as *;
+.counter {
+	font-size: 26px;
+	color: var(--theme-color);
+	font-weight: 600;
+}

@@ -1,0 +1,36 @@
+@use "../../utils" as *;
+
+.portfolio__img {
+  position: relative;
+  border: 2px solid var(--bg-slate); 
+  transition-duration: .3s;
+  & img {
+    max-width: 100%;
+  }
+  &:hover{
+    box-shadow: 5px 5px var(--bg-slate);
+  
+  }
+  .gallery-icon {
+    text-align: center;
+    line-height: 40px;
+    background-color: var(--white);
+    color: var(--bg-slate);
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    opacity: 0;
+    transition: 0.5s;
+    border: 2px solid var(--bg-slate);
+  }
+  &:hover .gallery-icon {
+    opacity: 1;
+    left: 20px;
+  }
+}
+
+.portfolio__content {
+	padding: 0 50px;
+}

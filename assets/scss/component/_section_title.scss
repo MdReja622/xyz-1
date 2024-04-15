@@ -1,0 +1,47 @@
+@use '../utils' as *;
+
+
+.home__title {
+	font-size: 48px;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.section__tag {
+	text-transform: uppercase;
+	background: #ddd;
+	padding: 5px 10px;
+	color: #000;
+	border-radius: 3px;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+.section-title {
+	font-size: 50px;	
+	color: #0f172a;
+	font-weight: 600;
+	line-height: 1.2;
+	text-transform: uppercase;
+}
+.section__title2 {
+	font-size: 40px;
+	line-height: 1.2;
+	font-weight: 600;
+}
+.section__title3 {
+	font-size: 32px;
+	line-height: 1.2;
+	font-weight: 600;
+}
+.section__tag2 {
+	margin-bottom: 20px;
+	color: #0f172a;
+	background-color: #ffedd5;
+	border-radius: 20px;
+	display: inline-block;
+	font-size: 14px;
+	letter-spacing: .05em;
+	padding: 12px 25px;
+	text-transform: uppercase;
+}

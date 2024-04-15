@@ -1,0 +1,27 @@
+@use '../../utils' as *;
+.skill__card {
+	border: 2px solid var(--black);
+	padding: 15px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    &:hover{
+		box-shadow: 5px 5px var(--bg-slate);
+    }
+}
+.skill__icon i {
+	height: 50px;
+	width: 50px;
+	background: var(--white);
+	text-align: center;
+	line-height: 50px;
+	color: var(--black);
+	font-size: 25px;
+	margin-right: 20px;
+	border: 2px solid var(--black);
+}
+.skill__title {
+	font-size: 35px;
+	color: var(--white);
+	margin: 0;
+}

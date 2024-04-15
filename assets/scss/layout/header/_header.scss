@@ -1,0 +1,136 @@
+@use '../../utils' as *;
+
+.transparent-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+.height{
+	min-height: 920px;
+	padding-top: 180px;
+}
+
+.header-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  transition: top 0.3s ease;
+  z-index: 99;
+}
+
+ul {
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+
+    a {
+      display: block;
+      text-transform: uppercase;
+      transition: 0.3s;
+      padding: 10px 0;
+      font-weight: 600;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 0;
+        bottom: 0;
+        left: auto;  
+        right: 0;
+        background: #EB6119;      
+        transition: 0.3s;
+      }
+    }
+    &:hover a {
+      color: #EB6119;    
+    }
+    &:hover a::after {  
+      width: 100%;  
+      left: 0;  
+      right: auto;
+      background: #EB6119;  
+    }
+  }
+}
+
+
+
+.menu-icon{
+  background: #ddd;
+  margin-left: 30px;
+  border-radius: 5px;
+  line-height: 60px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.menu-icon i {
+  font-size: 25px;
+}
+
+
+
+.body-overlay {
+	background-color: rgba(0, 0, 0, 0.5);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	-ms-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+
+.body-overlay.opened {
+	opacity: 1;
+	visibility: visible;
+}
+
+.sidebar {
+	position: fixed;
+	left: -100%;
+	top: 0;
+	width: 320px;
+	height: 100%;
+	background: #ffffff none repeat scroll 0 0;
+	-webkit-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	box-shadow: -5px 0 20px -5px rgba(0, 0, 0, 0.5);
+	-webkit-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	-moz-transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+	z-index: 9999;
+	padding: 30px;
+	min-width: 300px;
+	overflow-y: scroll;
+}
+.sidebar.sidebar-opened {
+	left: 0;
+}
+.sidebar-close {
+	color: #000;
+	position: absolute;
+	top: 13px;
+	right: 0;
+}
+//------------------responsive 
+// --------------responsive
+@media #{$xl} {
+  ul li {
+    margin: 0 10px;
+  }
+}

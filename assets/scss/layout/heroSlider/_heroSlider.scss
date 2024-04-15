@@ -1,0 +1,15 @@
+@use "../../utils" as *;
+
+.name{
+    display: block;
+}
+.hero__title {
+	font-size: 70px;
+}
+
+.address {
+	display: block;
+}
+.hero__img img {
+	max-width: 100%;
+}
