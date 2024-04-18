@@ -1,0 +1,1 @@
+sass --watch "c:\Users\Fastech Computer\Desktop\portfolio\assets\scss\main.scss":"c:\Users\Fastech Computer\Desktop\portfolio\assets\css\style.css"

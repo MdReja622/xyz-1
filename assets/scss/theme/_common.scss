@@ -11,7 +11,9 @@
 		max-width: 100%;
 	}
 }
-
+// img {
+// 	width: 100%;
+// }
 .fix {
     overflow:hidden
 }
@@ -45,8 +47,8 @@
 .fixed {
 	position: fixed;
 }
-.bottom-border{
-	border-bottom: 1px solid #ddd;
+.bottom-border {
+	border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 .bg-white{
 	background-color: #fff;
@@ -63,4 +65,7 @@
 .bg-img {
 	background-size: cover;
 	background-position: center;
+}
+.container {
+	max-width: 1230px;
 }

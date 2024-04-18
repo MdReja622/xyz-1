@@ -60,6 +60,13 @@ ul {
   }
 }
 
+li.current a::after{ 
+      width: 100%;  
+      left: 0;  
+      right: auto;
+      background: #EB6119;  
+}
+
 
 
 .menu-icon{
