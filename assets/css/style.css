@@ -7238,6 +7238,7 @@ textarea::placeholder {
 }
 
 .contact__img img {
+  width: 100%;
   max-width: 410px;
 }
 
@@ -7245,6 +7246,11 @@ textarea::placeholder {
   padding-left: 100px;
 }
 
+@media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  .contact__info {
+    padding-left: 30px;
+  }
+}
 .contact__info-item {
   color: var(--white);
   display: flex;

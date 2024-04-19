@@ -28,11 +28,21 @@ textarea::placeholder {
     border: 0;
 }
 .contact__img img{
+	width: 100%;
     max-width: 410px;
 }
+
 .contact__info {
 	padding-left: 100px;
+	
 }
+@media #{$sm, $xs} {
+    .contact__info {
+        padding-left: 30px;
+    }
+}
+
+
 .contact__info-item {
 	color: var(--white);
 	display: flex;
